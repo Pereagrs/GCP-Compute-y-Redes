@@ -1,0 +1,20 @@
+allowed:
+- IPProtocol: tcp
+- IPProtocol: udp
+- IPProtocol: icmp
+creationTimestamp: '2025-09-18T10:32:53.343-07:00'
+description: ''
+direction: INGRESS
+disabled: false
+id: '8394127332387978410'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: allow-bastion-to-gke
+network: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/networks/gke-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/firewalls/allow-bastion-to-gke
+sourceRanges:
+- 10.0.1.0/24
+targetTags:
+- gke-nodes

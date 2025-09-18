@@ -1,0 +1,7 @@
+title: "CustomStorageUploader"
+description: "Rol para listar buckets, carpetas y objetos, y subir archivos en Cloud Storage"
+stage: "GA"
+includedPermissions:
+  - storage.buckets.list
+  - storage.objects.list
+  - storage.objects.create

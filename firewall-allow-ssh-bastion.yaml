@@ -1,0 +1,20 @@
+allowed:
+- IPProtocol: tcp
+  ports:
+  - '22'
+creationTimestamp: '2025-09-18T10:32:16.478-07:00'
+description: ''
+direction: INGRESS
+disabled: false
+id: '5281322915296574671'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: allow-ssh-bastion
+network: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/networks/gke-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/firewalls/allow-ssh-bastion
+sourceRanges:
+- 35.189.197.178/32
+targetTags:
+- bastion

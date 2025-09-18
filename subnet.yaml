@@ -1,0 +1,21 @@
+creationTimestamp: '2025-09-18T10:27:48.248-07:00'
+fingerprint: dOe7Py8a4ek=
+gatewayAddress: 10.0.2.1
+id: '6931968633440698363'
+ipCidrRange: 10.0.2.0/24
+kind: compute#subnetwork
+name: gke-subnet
+network: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/networks/gke-vpc
+privateIpGoogleAccess: true
+privateIpv6GoogleAccess: DISABLE_GOOGLE_ACCESS
+purpose: PRIVATE
+region: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/regions/europe-southwest1
+secondaryIpRanges:
+- ipCidrRange: 10.0.4.0/24
+  rangeName: gke-gke-cluster-privado-services-4d26ca20
+  reservedInternalRange: https://networkconnectivity.googleapis.com/v1/projects/mariaperea-2503/locations/global/internalRanges/gke-gke-cluster-privado-services-4d26ca20
+- ipCidrRange: 10.0.8.0/21
+  rangeName: gke-gke-cluster-privado-pods-4d26ca20
+  reservedInternalRange: https://networkconnectivity.googleapis.com/v1/projects/mariaperea-2503/locations/global/internalRanges/gke-gke-cluster-privado-pods-4d26ca20
+selfLink: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/regions/europe-southwest1/subnetworks/gke-subnet
+stackType: IPV4_ONLY

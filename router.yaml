@@ -1,0 +1,17 @@
+creationTimestamp: '2025-09-18T10:49:53.519-07:00'
+encryptedInterconnectRouter: false
+id: '9151736958989498542'
+kind: compute#router
+name: gke-router
+nats:
+- autoNetworkTier: PREMIUM
+  enableEndpointIndependentMapping: false
+  endpointTypes:
+  - ENDPOINT_TYPE_VM
+  name: gke-nat
+  natIpAllocateOption: AUTO_ONLY
+  sourceSubnetworkIpRangesToNat: ALL_SUBNETWORKS_ALL_IP_RANGES
+  type: PUBLIC
+network: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/global/networks/gke-vpc
+region: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/regions/europe-southwest1
+selfLink: https://www.googleapis.com/compute/v1/projects/mariaperea-2503/regions/europe-southwest1/routers/gke-router
